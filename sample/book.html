@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Safer Side of Work and Life | Book by Robert Phillips</title>
+    <meta name="description" content="Discover Robert Phillips' upcoming book on the real cost of fractured focus on employee well-being and performance.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        .book-hero {
+            padding: 120px 0;
+            background: linear-gradient(135deg, var(--bg-light), #ffffff);
+            position: relative;
+        }
+        .book-hero-container {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+        .book-hero-image {
+            flex: 1;
+            position: relative;
+        }
+        .book-hero-image img {
+            max-width: 100%;
+            border-radius: 12px;
+            box-shadow: -20px 20px 60px rgba(0, 0, 0, 0.15);
+            transform: perspective(1000px) rotateY(-5deg);
+            transition: transform 0.3s ease;
+        }
+        .book-hero-image img:hover {
+            transform: perspective(1000px) rotateY(0deg);
+        }
+        .book-hero-content {
+            flex: 1.2;
+        }
+        .book-badge {
+            display: inline-block;
+            padding: 6px 16px;
+            background: rgba(0, 71, 250, 0.1);
+            color: var(--primary-blue);
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 24px;
+        }
+        .book-hero-content h1 {
+            font-size: 48px;
+            color: var(--dark-blue);
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+        .book-hero-content p {
+            font-size: 18px;
+            color: var(--text-light);
+            margin-bottom: 40px;
+        }
+        .inside-section {
+            padding: 100px 0;
+            background: var(--white);
+        }
+        .inside-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-top: 60px;
+        }
+        .inside-card {
+            background: var(--bg-light);
+            padding: 40px 30px;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+        }
+        .inside-card i {
+            font-size: 40px;
+            color: var(--primary-blue);
+            margin-bottom: 20px;
+        }
+        .inside-card h3 {
+            font-size: 22px;
+            color: var(--dark-blue);
+            margin-bottom: 12px;
+        }
+        
+        @media (max-width: 992px) {
+            .book-hero-container {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+            .inside-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <svg width="40" height="48" viewBox="0 0 40 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 0L0 8V22C0 33.1 8.5 43.5 20 48C31.5 43.5 40 33.1 40 22V8L20 0Z" fill="#0056FF"/>
+                    <path d="M20 4L4 10.4V22C4 31.3 11 40 20 43.8C29 40 36 31.3 36 22V10.4L20 4Z" fill="white"/>
+                    <path d="M12 16H24C27.3137 16 30 18.6863 30 22C30 25.3137 27.3137 28 24 28H18V34H12V16ZM18 22H24C24 22 24 22 24 22C24 22 24 22 24 22V22C24 22 24 22 24 22H18V22Z" fill="#0A192F"/>
+                    <path d="M14 14H24C27.866 14 31 17.134 31 21C31 24.866 27.866 28 24 28H18V36H14V14ZM18 18V24H24C25.6569 24 27 22.6569 27 21C27 19.3431 25.6569 18 24 18H18Z" fill="#0A192F"/>
+                </svg>
+                <div class="logo-text">
+                    <span class="brand-name">PROACTIVE</span>
+                    <span class="brand-sub">SEMINARS</span>
+                    <span class="tagline">The Safer Side of Work and Life</span>
+                </div>
+            </a>
+            <div class="nav-links">
+                <a href="index.html#services">Services</a>
+                <a href="podcast.html">Podcast</a>
+                <a href="book.html" style="color: var(--primary-blue);">Book</a>
+                <a href="index.html#about">About</a>
+            </div>
+            <a href="index.html#contact" class="btn btn-primary">Check Availability</a>
+        </div>
+    </nav>
+
+    <!-- Book Hero -->
+    <header class="book-hero">
+        <div class="container book-hero-container">
+            <div class="book-hero-image">
+                <img src="images/Book_Cover_Reference.jpg" alt="The Safer Side of Work and Life Book Cover">
+            </div>
+            <div class="book-hero-content">
+                <div class="book-badge">Releasing Late 2025</div>
+                <h1>The Safer Side of Work and Life</h1>
+                <p>Robert Phillips' highly anticipated upcoming book dives deep into the intersection of well-being, situational confidence, and organizational performance. Discover why distracted employees are your biggest unrecognized risk and learn actionable strategies to build resilient, high-performing cultures.</p>
+                <div style="display: flex; gap: 16px;">
+                    <a href="#waitlist" class="btn btn-primary btn-large">Join the Waitlist</a>
+                    <a href="#chapters" class="btn btn-outline btn-large">What's Inside</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- What's Inside Section -->
+    <section class="inside-section" id="chapters">
+        <div class="container">
+            <h2 class="section-title">What You'll Discover</h2>
+            <div class="inside-grid">
+                <div class="inside-card">
+                    <i class="ph ph-target"></i>
+                    <h3>The Cost of Distraction</h3>
+                    <p>Uncover the hidden financial and cultural impacts of a workforce operating with fractured focus and constant overwhelm.</p>
+                </div>
+                <div class="inside-card">
+                    <i class="ph ph-shield-check"></i>
+                    <h3>Situational Confidence</h3>
+                    <p>Moving beyond fear-based awareness training to build genuine preparedness that empowers employees on and off the clock.</p>
+                </div>
+                <div class="inside-card">
+                    <i class="ph ph-trend-up"></i>
+                    <h3>Resilient Performance</h3>
+                    <p>Proven leadership strategies to support the whole person, combat chronic burnout, and drive measurable organizational ROI.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Author Section (Reused from previous index.html) -->
+    <section class="author" id="author" style="background: var(--bg-light); padding: 100px 0;">
+        <div class="container author-container">
+            <div class="author-image">
+                <img src="images/robert_studio_portrait.png" alt="Robert Phillips Portrait" style="border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+            </div>
+            <div class="author-content">
+                <div class="badge" style="display: inline-block; padding: 6px 12px; background: rgba(3, 105, 161, 0.1); color: var(--primary-blue); border-radius: 20px; font-weight: 600; font-size: 14px; margin-bottom: 16px;">About The Author</div>
+                <h2>Robert Phillips</h2>
+                <p>Robert Phillips is a highly sought-after consultant, speaker, and author who helps organizations identify the real costs of fractured focus on their most valuable asset—their people.</p>
+                <p>Drawing from decades of experience, his work is direct, plain-spoken, and built for real-world application, helping countless organizations build cultures of well-being, vigilance, and top-tier performance.</p>
+                <a href="index.html#contact" class="btn btn-primary">Book Robert to Speak</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Waitlist CTA -->
+    <section class="cta-banner" id="waitlist" style="margin-top: 0; padding: 80px 0; background: var(--white);">
+        <div class="container cta-container" style="background: linear-gradient(135deg, var(--dark-blue), var(--primary-blue));">
+            <div class="cta-text">
+                <h2>Be The First To Know</h2>
+                <p style="color: white; opacity: 0.9; margin-bottom: 0;">Sign up for the waitlist to receive an exclusive preview chapter and get notified the moment the book is available for pre-order.</p>
+            </div>
+            <form style="display: flex; gap: 12px; width: 100%; max-width: 400px;" onsubmit="event.preventDefault();">
+                <input type="email" placeholder="Your email address" style="flex: 1; padding: 14px 20px; border: none; border-radius: 4px; font-size: 16px;" required>
+                <button type="submit" class="btn btn-white btn-large">Notify Me</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo">
+                    <svg width="40" height="48" viewBox="0 0 40 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 0L0 8V22C0 33.1 8.5 43.5 20 48C31.5 43.5 40 33.1 40 22V8L20 0Z" fill="white"/>
+                        <path d="M20 4L4 10.4V22C4 31.3 11 40 20 43.8C29 40 36 31.3 36 22V10.4L20 4Z" fill="#0A192F"/>
+                        <path d="M14 14H24C27.866 14 31 17.134 31 21C31 24.866 27.866 28 24 28H18V36H14V14ZM18 18V24H24C25.6569 24 27 22.6569 27 21C27 19.3431 25.6569 18 24 18H18Z" fill="white"/>
+                    </svg>
+                    <div class="logo-text">
+                        <span class="brand-name text-white">PROACTIVE</span>
+                        <span class="brand-sub">SEMINARS</span>
+                    </div>
+                </div>
+                <p class="footer-tagline">The Safer Side of Work and Life</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="index.html#services">Services</a>
+                <a href="podcast.html">Podcast</a>
+                <a href="book.html">Book</a>
+                <a href="index.html#about">About</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <div class="contact-item">
+                    <i class="ph-fill ph-envelope-simple"></i>
+                    <a href="mailto:info@proactiveseminars.com">info@proactiveseminars.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="ph-fill ph-phone"></i>
+                    <a href="tel:4692228641">469-222-8641</a>
+                </div>
+                <div class="contact-item">
+                    <i class="ph-fill ph-globe"></i>
+                    <a href="https://proactiveseminars.com">proactiveseminars.com</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Proactive Seminars. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

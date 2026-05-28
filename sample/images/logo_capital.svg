@@ -1,0 +1,5 @@
+<svg width="200" height="80" xmlns="http://www.w3.org/2000/svg">
+        <rect width="200" height="80" fill="transparent"/>
+        <text x="100" y="52" font-family="Georgia" font-size="28" font-weight="bold" fill="#333" text-anchor="middle">CAPITAL TITLE</text>
+        <path d="M20 60 L180 60" stroke="#d4af37" stroke-width="3"/>
+    </svg>

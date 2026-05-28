@@ -1,0 +1,4 @@
+<svg width="200" height="80" xmlns="http://www.w3.org/2000/svg">
+        <rect width="200" height="80" fill="transparent"/>
+        <text x="100" y="52" font-family="Arial" font-size="36" font-weight="bold" fill="#e11b22" text-anchor="middle">RE<tspan fill="#003f7a">/MAX</tspan></text>
+    </svg>
