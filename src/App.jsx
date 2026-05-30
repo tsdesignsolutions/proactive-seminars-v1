@@ -6,20 +6,22 @@ import Footer from './components/layout/Footer';
 import HomePage from './pages/HomePage';
 import BookPage from './pages/BookPage';
 import PodcastPage from './pages/PodcastPage';
+import ContactPage from './pages/ContactPage';
+import PlannerPage from './pages/PlannerPage';
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
 
   useEffect(() => {
     if (hash) {
-      // Delay slightly to allow DOM to paint after route change
+      // Delay slightly to allow DOM to paint after route change and exit animations (0.3s)
       setTimeout(() => {
         const el = document.querySelector(hash);
         if (el) {
           el.scrollIntoView({ behavior: 'smooth' });
           return;
         }
-      }, 100);
+      }, 400);
     } else {
       window.scrollTo({ top: 0, behavior: 'instant' });
     }
@@ -41,6 +43,8 @@ export default function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/book" element={<BookPage />} />
             <Route path="/podcast" element={<PodcastPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/planner" element={<PlannerPage />} />
           </Routes>
         </AnimatePresence>
       </main>

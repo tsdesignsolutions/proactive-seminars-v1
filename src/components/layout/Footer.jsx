@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-const logoImg = '/images/logo.png';
+const logoImg = '/images/Proactive_Seminars_Logo_The_Safer_Side_1920x1080.jpg';
 
 export default function Footer() {
   return (
@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container footer-container">
         <div className="footer-brand">
           <div className="logo">
-            <img src={logoImg} alt="Proactive Seminars Logo" style={{ height: '60px', width: 'auto' }} />
+            <img src={logoImg} alt="Proactive Seminars Logo" style={{ height: '70px', width: 'auto' }} />
             <div className="logo-text">
               <span className="brand-name text-white">PROACTIVE</span>
               <span className="brand-sub">SEMINARS</span>
@@ -21,6 +21,7 @@ export default function Footer() {
           <Link to="/podcast">Podcast</Link>
           <Link to="/book">Book</Link>
           <Link to="/#about">About</Link>
+          <Link to="/planner">For Planners</Link>
         </div>
         <div className="footer-contact">
           <h4>Contact</h4>
@@ -28,18 +29,11 @@ export default function Footer() {
             <i className="ph-fill ph-envelope-simple"></i>
             <a href="mailto:info@proactiveseminars.com">info@proactiveseminars.com</a>
           </div>
-          <div className="contact-item">
-            <i className="ph-fill ph-phone"></i>
-            <a href="tel:4692228641">469-222-8641</a>
-          </div>
-          <div className="contact-item">
-            <i className="ph-fill ph-globe"></i>
-            <a href="https://proactiveseminars.com">proactiveseminars.com</a>
-          </div>
+          <Link to="/contact" className="btn btn-primary" style={{ marginTop: '1rem', display: 'inline-block' }}>Book Robert</Link>
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; 2025 Proactive Seminars. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Proactive Seminars. All rights reserved.</p>
       </div>
     </footer>
   );

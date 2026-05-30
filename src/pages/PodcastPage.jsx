@@ -21,11 +21,8 @@ export default function PodcastPage() {
             </div>
           </div>
           <div className="podcast-hero-image">
-            <div className="podcast-cover">
-              <div style={{ textAlign: 'center', color: 'var(--primary-blue)', zIndex: 2 }}>
-                <i className="ph ph-microphone-stage" style={{ fontSize: '64px', marginBottom: '16px' }}></i>
-                <h3 style={{ fontSize: '24px', fontFamily: 'var(--font-heading)', color: 'var(--dark-blue)' }}>The Safer Side<br />Podcast</h3>
-              </div>
+            <div className="podcast-cover" style={{ padding: 0 }}>
+              <img src="/images/new/podcast_image.png" alt="The Safer Side Podcast" style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'relative', zIndex: 2 }} />
             </div>
           </div>
         </div>
