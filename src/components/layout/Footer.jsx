@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container footer-container">
         <div className="footer-brand">
           <div className="logo">
-            <img src={logoImg} alt="Proactive Seminars Logo" style={{ height: '70px', width: 'auto' }} />
+            <img src={logoImg} alt="Proactive Seminars Logo" loading="lazy" style={{ height: '70px', width: 'auto' }} />
             <div className="logo-text">
               <span className="brand-name text-white">PROACTIVE</span>
               <span className="brand-sub">SEMINARS</span>

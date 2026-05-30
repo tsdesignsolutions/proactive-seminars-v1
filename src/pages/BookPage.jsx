@@ -55,7 +55,7 @@ export default function BookPage() {
       <section className="author" id="author" style={{ background: 'var(--bg-light)', padding: '100px 0' }}>
         <div className="container author-container">
           <div className="author-image">
-            <img src={authorPortraitImage} alt="Robert Phillips Portrait" style={{ borderRadius: '20px', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }} />
+            <img src={authorPortraitImage} alt="Robert Phillips Portrait" loading="lazy" style={{ borderRadius: '20px', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }} />
           </div>
           <div className="author-content">
             <div className="badge" style={{ display: 'inline-block', padding: '6px 12px', background: 'rgba(3, 105, 161, 0.1)', color: 'var(--primary-blue)', borderRadius: '20px', fontWeight: 600, fontSize: '14px', marginBottom: '16px' }}>About The Author</div>

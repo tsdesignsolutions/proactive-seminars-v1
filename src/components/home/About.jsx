@@ -17,6 +17,7 @@ export default function About() {
           <img 
             src={authorImage} 
             alt="Robert Phillips" 
+            loading="lazy"
             style={{ borderRadius: '20px', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }} 
           />
         </div>

@@ -18,6 +18,7 @@ export default function BookAuthor() {
           <img
             src={portraitImage}
             alt="Robert Phillips Portrait"
+            loading="lazy"
             className="rounded-2xl shadow-[0_20px_40px_rgba(0,0,0,0.1)]"
           />
         </motion.div>

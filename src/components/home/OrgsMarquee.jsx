@@ -30,7 +30,7 @@ export default function OrgsMarquee() {
         <div className="orgs-track">
           {doubledLogos.map((logo, i) => (
             <div key={i} className="org-item">
-              <img src={logo.src} alt={logo.alt} />
+              <img src={logo.src} alt={logo.alt} loading="lazy" />
             </div>
           ))}
         </div>

@@ -15,7 +15,7 @@ export default function CrossSell() {
         </div>
         <div className="cross-card podcast-teaser" style={{ flexDirection: 'column', alignItems: 'flex-start', gap: '24px', padding: '40px' }}>
           <div className="cross-image" style={{ width: '100%', height: '240px', overflow: 'hidden', borderRadius: '12px' }}>
-            <img src={podcastImage} alt="The Safer Side Podcast" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top' }} />
+            <img src={podcastImage} alt="The Safer Side Podcast" loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top' }} />
           </div>
           <div className="cross-content" style={{ maxWidth: '100%' }}>
             <div className="badge" style={{ background: 'rgba(0,71,250,0.1)', color: 'var(--primary-blue)' }}>New Episodes Weekly</div>

@@ -13,13 +13,13 @@ export default function CTABanner() {
       {/* Background Image Carousel */}
       <div className="cta-carousel-bg" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 1, opacity: 0.6, overflow: 'hidden', display: 'flex' }}>
         <div className="cta-track" style={{ display: 'flex', width: '200%', animation: 'scroll-marquee 30s linear infinite' }}>
-          <img src="/images/new/cta_carousel_1.png" alt="" style={{ width: '33.33%', height: '100%', objectFit: 'cover' }} />
-          <img src="/images/new/cta_carousel_2.png" alt="" style={{ width: '33.33%', height: '100%', objectFit: 'cover' }} />
-          <img src="/images/new/cta_carousel_3.png" alt="" style={{ width: '33.33%', height: '100%', objectFit: 'cover' }} />
+          <img src="/images/new/cta_carousel_1.png" alt="" loading="lazy" style={{ width: '33.33%', height: '100%', objectFit: 'cover' }} />
+          <img src="/images/new/cta_carousel_2.png" alt="" loading="lazy" style={{ width: '33.33%', height: '100%', objectFit: 'cover' }} />
+          <img src="/images/new/cta_carousel_3.png" alt="" loading="lazy" style={{ width: '33.33%', height: '100%', objectFit: 'cover' }} />
           {/* Duplicate for infinite scroll */}
-          <img src="/images/new/cta_carousel_1.png" alt="" style={{ width: '33.33%', height: '100%', objectFit: 'cover' }} />
-          <img src="/images/new/cta_carousel_2.png" alt="" style={{ width: '33.33%', height: '100%', objectFit: 'cover' }} />
-          <img src="/images/new/cta_carousel_3.png" alt="" style={{ width: '33.33%', height: '100%', objectFit: 'cover' }} />
+          <img src="/images/new/cta_carousel_1.png" alt="" loading="lazy" style={{ width: '33.33%', height: '100%', objectFit: 'cover' }} />
+          <img src="/images/new/cta_carousel_2.png" alt="" loading="lazy" style={{ width: '33.33%', height: '100%', objectFit: 'cover' }} />
+          <img src="/images/new/cta_carousel_3.png" alt="" loading="lazy" style={{ width: '33.33%', height: '100%', objectFit: 'cover' }} />
         </div>
       </div>
       <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 1, background: 'linear-gradient(to right, rgba(10,37,64,0.9) 0%, rgba(10,37,64,0.3) 50%, rgba(10,37,64,0.9) 100%)' }}></div>
