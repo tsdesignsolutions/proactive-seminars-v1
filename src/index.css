@@ -522,10 +522,11 @@ img {
 
 /* CTA Banner */
 .cta-banner {
-    padding: 40px 0;
+    padding: 80px 0;
     position: relative;
-    margin-top: -40px;
+    margin-top: 0;
     z-index: 10;
+    overflow: hidden;
 }
 
 .cta-container {
@@ -655,6 +656,7 @@ img {
         flex-direction: column;
         text-align: center;
         gap: 24px;
+        padding: 40px 24px;
     }
     .cta-banner h2 {
         margin-right: 0;
@@ -1141,8 +1143,18 @@ img {
         font-size: 26px;
     }
     
-    .hero, .features, .author, .testimonials, .cross-sell, .focus, .framework, .awareness {
+    .hero, .features, .author, .testimonials, .cross-sell, .focus, .framework, .awareness, .cta-banner {
         padding: 50px 0;
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+    
+    .hero-actions .btn {
+        width: 100%;
     }
     
     .hero-image img {

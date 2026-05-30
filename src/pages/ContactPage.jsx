@@ -65,10 +65,10 @@ export default function ContactPage() {
       transition={{ duration: 0.3 }}
       className="contact-page-wrapper"
     >
-      <div className="container" style={{ padding: '80px 20px', maxWidth: '900px', margin: '0 auto' }}>
+      <div className="container" style={{ padding: 'clamp(40px, 10vw, 80px) 20px', maxWidth: '900px', margin: '0 auto' }}>
         <div style={{ textAlign: 'center', marginBottom: '60px' }}>
-          <h1 style={{ fontSize: '48px', color: 'var(--dark-blue)', marginBottom: '16px' }}>Book Robert</h1>
-          <p style={{ fontSize: '1.2rem', color: 'var(--text-light)', maxWidth: '600px', margin: '0 auto' }}>
+          <h1 style={{ fontSize: 'clamp(32px, 8vw, 48px)', color: 'var(--dark-blue)', marginBottom: '16px' }}>Book Robert</h1>
+          <p style={{ fontSize: 'clamp(16px, 4vw, 19px)', color: 'var(--text-light)', maxWidth: '600px', margin: '0 auto' }}>
             Ready to transform how your team approaches well-being and performance? Get in touch to discuss your next event or strategic consulting needs.
           </p>
         </div>
@@ -98,7 +98,7 @@ export default function ContactPage() {
           >
             <div className="form-section-title">Personal Details</div>
             
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '0 24px' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '0 24px' }}>
               <div className="floating-input-group">
                 <input type="text" id="firstName" name="firstName" value={formData.firstName} onChange={handleChange} placeholder=" " required />
                 <label htmlFor="firstName" className="floating-label">First Name *</label>
@@ -109,7 +109,7 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '0 24px' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '0 24px' }}>
               <div className="floating-input-group">
                 <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} placeholder=" " required />
                 <label htmlFor="email" className="floating-label">Email Address *</label>
@@ -157,7 +157,7 @@ export default function ContactPage() {
                     <label htmlFor="eventName" className="floating-label">Name and Date of Event</label>
                   </div>
                   
-                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '0 24px' }}>
+                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '0 24px' }}>
                     <div className="floating-input-group">
                       <input type="text" id="eventLocation" name="eventLocation" value={formData.eventLocation} onChange={handleChange} placeholder=" " />
                       <label htmlFor="eventLocation" className="floating-label">Event Location (City/Venue or Virtual)</label>

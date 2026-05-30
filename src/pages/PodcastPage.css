@@ -139,3 +139,15 @@
         gap: 20px;
     }
 }
+
+@media (max-width: 768px) {
+    .podcast-hero {
+        padding: 60px 0 40px;
+    }
+    .podcast-hero-content h1 {
+        font-size: clamp(32px, 8vw, 48px);
+    }
+    .episodes-section {
+        padding: 60px 0;
+    }
+}

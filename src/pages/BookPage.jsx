@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import './BookPage.css';
 const bookCoverImage = '/images/Book_Cover_Reference.jpg';
-const authorPortraitImage = '/images/robert_studio_portrait.png';
+const authorPortraitImage = '/images/new/about_image.png';
 
 export default function BookPage() {
   return (
@@ -52,7 +52,7 @@ export default function BookPage() {
         </div>
       </section>
 
-      <section className="author" id="author" style={{ background: 'var(--bg-light)', padding: '100px 0' }}>
+      <section className="author" id="author" style={{ background: 'var(--bg-light)' }}>
         <div className="container author-container">
           <div className="author-image">
             <img src={authorPortraitImage} alt="Robert Phillips Portrait" loading="lazy" style={{ borderRadius: '20px', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }} />
@@ -67,16 +67,18 @@ export default function BookPage() {
         </div>
       </section>
 
-      <section className="cta-banner" id="waitlist" style={{ marginTop: 0, padding: '80px 0', background: 'var(--white)' }}>
-        <div className="container cta-container" style={{ background: 'linear-gradient(135deg, var(--dark-blue), var(--primary-blue))' }}>
+      <section className="cta-banner" id="waitlist" style={{ background: 'var(--white)' }}>
+        <div className="container">
+          <div className="cta-container" style={{ background: 'linear-gradient(135deg, var(--dark-blue), var(--primary-blue))' }}>
           <div className="cta-text">
             <h2>Be The First To Know</h2>
             <p style={{ color: 'white', opacity: 0.9, marginBottom: 0 }}>Sign up for the waitlist to receive an exclusive preview chapter and get notified the moment the book is available for pre-order.</p>
           </div>
-          <form style={{ display: 'flex', gap: '12px', width: '100%', maxWidth: '400px' }} onSubmit={(e) => e.preventDefault()}>
-            <input type="email" placeholder="Your email address" style={{ flex: 1, padding: '14px 20px', border: 'none', borderRadius: '4px', fontSize: '16px' }} required />
-            <button type="submit" className="btn btn-white btn-large">Notify Me</button>
+          <form style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', width: '100%', maxWidth: '400px', margin: '0 auto' }} onSubmit={(e) => e.preventDefault()}>
+            <input type="email" placeholder="Your email address" style={{ flex: '1 1 200px', padding: '14px 20px', border: 'none', borderRadius: '4px', fontSize: '16px' }} required />
+            <button type="submit" className="btn btn-white btn-large" style={{ flex: '1 1 auto' }}>Notify Me</button>
           </form>
+          </div>
         </div>
       </section>
     </motion.div>

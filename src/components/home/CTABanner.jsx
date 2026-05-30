@@ -2,10 +2,10 @@ import { Link } from 'react-router-dom';
 const logoImg = '/images/Proactive_Seminars_Logo_The_Safer_Side_1920x1080.jpg';
 export default function CTABanner() {
   return (
-    <section className="cta-banner" id="contact" style={{ padding: '80px 0', marginTop: 0, backgroundColor: 'var(--dark-blue)', color: 'white', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
+    <section className="cta-banner" id="contact" style={{ backgroundColor: 'var(--dark-blue)', color: 'white', textAlign: 'center' }}>
       <div className="container" style={{ position: 'relative', zIndex: 2 }}>
-        <h2 style={{ fontSize: '36px', marginBottom: '20px', color: 'white' }}>Ready to Protect Your Team's Focus?</h2>
-        <p style={{ fontSize: '18px', maxWidth: '700px', margin: '0 auto 40px auto', opacity: 0.9 }}>
+        <h2 style={{ fontSize: 'clamp(28px, 5vw, 36px)', marginBottom: '20px', color: 'white' }}>Ready to Protect Your Team's Focus?</h2>
+        <p style={{ fontSize: 'clamp(16px, 3vw, 18px)', maxWidth: '700px', margin: '0 auto 40px auto', opacity: 0.9 }}>
           Bring Robert Phillips to your organization for strategic consulting or a high-impact keynote that transforms how your team approaches well-being and performance.
         </p>
         <Link to="/contact" className="btn btn-primary btn-large">Book Robert</Link>
