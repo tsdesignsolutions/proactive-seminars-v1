@@ -1,0 +1,7 @@
+<svg width="200" height="80" xmlns="http://www.w3.org/2000/svg">
+        <rect width="200" height="80" fill="transparent"/>
+        <rect x="20" y="20" width="40" height="40" fill="#002d72"/>
+        <text x="40" y="48" font-family="Arial" font-size="24" font-weight="bold" fill="#fff" text-anchor="middle">CB</text>
+        <text x="75" y="42" font-family="Arial" font-size="16" font-weight="bold" fill="#002d72">COLDWELL</text>
+        <text x="75" y="58" font-family="Arial" font-size="16" font-weight="bold" fill="#002d72">BANKER</text>
+    </svg>
