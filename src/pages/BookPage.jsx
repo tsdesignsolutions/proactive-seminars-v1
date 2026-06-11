@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import './BookPage.css';
-const bookCoverImage = '/images/Book_Cover_Reference.jpg';
+const bookCoverImage = '/images/new/firstBOOKCOVERLATEST.jpg';
 const authorPortraitImage = '/images/new/about_image.png';
 
 export default function BookPage() {

@@ -75,7 +75,7 @@ export default function EpisodeList() {
           ))}
 
           <div className="text-center mt-10">
-            <Button href="#" variant="outline" size="large">Load More Episodes</Button>
+            <Button variant="outline" size="large" onClick={(e) => e.preventDefault()}>Load More Episodes</Button>
           </div>
         </div>
       </div>

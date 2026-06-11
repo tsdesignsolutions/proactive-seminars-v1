@@ -23,14 +23,14 @@ export default function PodcastHero() {
           </p>
           <div className="flex gap-4 justify-center lg:justify-start flex-wrap">
             <Button
-              href="#"
+              href="https://open.spotify.com"
               size="large"
               icon={<SpotifyLogo weight="fill" size={24} />}
             >
               Listen on Spotify
             </Button>
             <Button
-              href="#"
+              href="https://podcasts.apple.com"
               variant="outline"
               size="large"
               icon={<ApplePodcastsLogo weight="fill" size={24} />}

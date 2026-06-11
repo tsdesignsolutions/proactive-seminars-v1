@@ -16,8 +16,8 @@ export default function PodcastPage() {
             <h1>Tune Into The Conversation</h1>
             <p>Join Robert Phillips as he speaks with industry leaders, experts, and executives about overcoming distraction, prioritizing employee well-being, and navigating the safer side of work and life.</p>
             <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
-              <a href="#" className="btn btn-primary btn-large" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}><i className="ph-fill ph-spotify-logo" style={{ fontSize: '24px' }}></i> Listen on Spotify</a>
-              <a href="#" className="btn btn-outline btn-large" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}><i className="ph-fill ph-apple-podcasts-logo" style={{ fontSize: '24px' }}></i> Apple Podcasts</a>
+              <a href="https://open.spotify.com" target="_blank" rel="noreferrer" className="btn btn-primary btn-large" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}><i className="ph-fill ph-spotify-logo" style={{ fontSize: '24px' }}></i> Listen on Spotify</a>
+              <a href="https://podcasts.apple.com" target="_blank" rel="noreferrer" className="btn btn-outline btn-large" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}><i className="ph-fill ph-apple-podcasts-logo" style={{ fontSize: '24px' }}></i> Apple Podcasts</a>
             </div>
           </div>
           <div className="podcast-hero-image">
@@ -64,7 +64,7 @@ export default function PodcastPage() {
             </div>
             
             <div style={{ textAlign: 'center', marginTop: '40px' }}>
-              <a href="#" className="btn btn-outline btn-large">Load More Episodes</a>
+              <button className="btn btn-outline btn-large" onClick={(e) => e.preventDefault()}>Load More Episodes</button>
             </div>
           </div>
         </div>

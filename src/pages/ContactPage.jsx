@@ -68,9 +68,23 @@ export default function ContactPage() {
       <div className="container" style={{ padding: 'clamp(40px, 10vw, 80px) 20px', maxWidth: '900px', margin: '0 auto' }}>
         <div style={{ textAlign: 'center', marginBottom: '60px' }}>
           <h1 style={{ fontSize: 'clamp(32px, 8vw, 48px)', color: 'var(--dark-blue)', marginBottom: '16px' }}>Book Robert</h1>
-          <p style={{ fontSize: 'clamp(16px, 4vw, 19px)', color: 'var(--text-light)', maxWidth: '600px', margin: '0 auto' }}>
+          <p style={{ fontSize: 'clamp(16px, 4vw, 19px)', color: 'var(--text-light)', maxWidth: '600px', margin: '0 auto', marginBottom: '40px' }}>
             Ready to transform how your team approaches well-being and performance? Get in touch to discuss your next event or strategic consulting needs.
           </p>
+          
+          <div style={{ background: 'var(--bg-light)', padding: '32px', borderRadius: '16px', border: '1px solid var(--border-color)', maxWidth: '600px', margin: '0 auto' }}>
+            <h3 style={{ fontSize: '22px', color: 'var(--dark-blue)', marginBottom: '12px' }}>Frictionless Booking</h3>
+            <p style={{ fontSize: '16px', color: 'var(--text-light)', marginBottom: '24px' }}>Skip the email back-and-forth. Book a 15-Minute Event Strategy Call directly on Robert's calendar.</p>
+            <a href="https://calendly.com/" target="_blank" rel="noreferrer" className="btn btn-primary btn-large" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', width: '100%', justifyContent: 'center' }}>
+              Schedule Strategy Call
+            </a>
+          </div>
+          
+          <div style={{ marginTop: '40px', display: 'flex', alignItems: 'center', gap: '16px', maxWidth: '600px', margin: '40px auto 0' }}>
+            <div style={{ flex: 1, height: '1px', background: 'var(--border-color)' }}></div>
+            <span style={{ fontSize: '14px', color: 'var(--text-light)', textTransform: 'uppercase', letterSpacing: '1px', fontWeight: 600 }}>Or fill out the detailed form</span>
+            <div style={{ flex: 1, height: '1px', background: 'var(--border-color)' }}></div>
+          </div>
         </div>
 
         {isSubmitted ? (
